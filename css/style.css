@@ -1,0 +1,275 @@
+@font-face {
+  font-family: ubuntu;
+  src: url(../font/UbuntuTitling-Bold.ttf);
+}
+:root {
+  --bg: #183153;
+  --primary: #fcc419;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  background-image: url(../image/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+}
+
+/* .brand {
+  position: absolute;
+  margin-top: 1rem;
+  text-align: center;
+  color: #fff;
+  top: 3rem;
+}
+.brand h1 {
+  text-shadow: 1px 1px 1px black;
+}
+.brand h1 span {
+  color: var(--primary);
+} */
+.wrapper {
+  margin: 0 5rem;
+  position: fixed;
+  width: 25rem;
+  background: transparent;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 2rem;
+  color: #fff;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 8px rgb(255, 255, 255);
+  padding: 2rem 3.5rem;
+}
+.wrapper h1 {
+  text-align: center;
+  font-size: 3rem;
+  text-decoration: underline;
+}
+
+.wrapper .input-box {
+  position: relative;
+  width: 100%;
+  margin-right: -1rem;
+  height: 3rem;
+  margin: 1rem 0;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid #fff;
+  border-radius: 2rem;
+  font-size: 1.2rem;
+  color: white;
+  padding: 1rem;
+}
+
+.input-box input::placeholder {
+  color: #ffffff6b;
+}
+
+.input-box i {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1rem;
+}
+
+.wrapper .remember-forget {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0 1rem;
+  font-size: 1rem;
+  color: #fff;
+}
+.wrapper a {
+  color: var(--primary);
+}
+.wrapper a:hover {
+  color: #fff;
+}
+
+.btn {
+  width: 100%;
+  height: 2rem;
+  border: none;
+  outline: none;
+  border-radius: 2rem;
+  margin: 1rem 0;
+}
+
+.btn:hover {
+  box-shadow: inset 1px 1px 1px black;
+  background-color: #cccccc;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0 0;
+  font-size: 1.8rem;
+}
+.socials a {
+  margin: 0 1rem;
+  color: white;
+}
+.socials a:hover {
+  color: var(--primary);
+}
+
+/* signup */
+
+.wrapper-signup {
+  position: absolute;
+  margin-right: -150rem;
+  background-color: #fff;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 2rem;
+  color: #000;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  padding: 2rem 3.5rem;
+  box-shadow: 5px 9px 1px 1px #000000;
+  transition: 0.5s;
+}
+
+.wrapper-signup .btn-close-2,
+.wrapper-forgot-pass .btn-close {
+  position: absolute;
+  font-size: 2rem;
+  color: var(--bg);
+  top: 0;
+  left: 90%;
+  outline: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.wrapper-signup h1 {
+  text-align: center;
+  font-size: 3rem;
+  text-decoration: underline;
+}
+
+.wrapper-signup .input-box {
+  position: relative;
+  width: 100%;
+  height: 3rem;
+  margin: 2rem 0;
+}
+.wrapper-signup label {
+  font-weight: bold;
+}
+.wrapper-signup .input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 1px solid #000000;
+  border-radius: 2rem;
+  font-size: 1rem;
+  color: #000;
+  padding: 1rem;
+}
+.wrapper-signup .input-box input::placeholder {
+  color: #00000044;
+}
+/* wrapper forgot pass */
+.wrapper-forgot-pass {
+  position: absolute;
+  margin-left: -150rem;
+  background-color: #fff;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 2rem;
+  color: #000;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  padding: 2rem 3.5rem;
+  box-shadow: 5px 9px 1px 1px #000000;
+  transition: 0.5s;
+}
+
+.wrapper-forgot-pass h1 {
+  text-align: center;
+  font-size: 3rem;
+  text-decoration: underline;
+}
+
+.wrapper-forgot-pass .input-box {
+  position: relative;
+  width: 100%;
+  height: 3rem;
+  margin: 2rem 0;
+}
+.wrapper-forgot-pass label {
+  font-weight: bold;
+}
+.wrapper-forgot-pass .input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 1px solid #000000;
+  border-radius: 2rem;
+  font-size: 1rem;
+  color: #000;
+  padding: 1rem;
+}
+.wrapper-forgot-pass .input-box input::placeholder {
+  color: #00000044;
+}
+/* media queriess */
+
+@media (max-width: 1366px) {
+  html {
+    font-size: 85%;
+  }
+  .wrapper-forgot-pass.active {
+    margin-left: -60%;
+  }
+
+  .wrapper-signup.active {
+    margin-right: -60%;
+  }
+}
+
+@media (max-width: 1220px) {
+  .wrapper-forgot-pass.active {
+    margin-left: 0;
+    z-index: 1;
+  }
+
+  .wrapper-signup.active {
+    margin-right: 0;
+    z-index: 1;
+  }
+}
+
+/* tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 72.5%;
+  }
+}
+/* phone */
+@media (max-width: 450px) {
+  html {
+    font-size: 65%;
+  }
+}
